@@ -7,6 +7,7 @@ module.exports = {
         '60lines': "url('/images/lines.png')",
         'fibres': "url('/images/translucent-fibres.png')",
         'twill': "url('/images/black-twill.png')",
+        'axiom': "url('/images/axiom-pattern.png')",
       }
     },
   },
