@@ -24,9 +24,9 @@
                   <i>Web Development • 3D Virtual Tours • R.E. Photography</i>
                 </h2>
                 <ul class="2xl:hidden text-accent text-3xl md:text-5xl p-5 font-thin font-sans text-center">
-                  <li><i>Web Development</i></li>
-                  <li><i>3D Virtual Tours</i></li>
-                  <li><i>R.E. Photography</i></li>
+                  <li id="webDev"><i>Web Development</i></li>
+                  <li id="tours"><i>3D Virtual Tours</i></li>
+                  <li id="photos"><i>R.E. Photography</i></li>
                 </ul>
             </div>
             <!-- <picture class="p-4 col-start-1 col-end-4 row-start-2 mx-auto">
@@ -56,8 +56,8 @@
               <p class="text-xl mt-3 font-thin font-sans">Web Development</p>
             </div>
           </div> -->
-          <section class="mt-[60px] sm:mt-28 mx-auto">
-            <a href="#webDev" alt="Mythrill" target="_blank" class="">
+          <section class="mt-[60px] sm:mt-32 mx-auto ">
+            <a alt="Pacific Panorama LLC Web Development" class="cursor-pointer">
               <div class="card1">
                 <div class="wrapper">
                   <img src="./images/pexels-karsten-madsen-18105.jpg" class="cover-image grayscale" />
@@ -68,8 +68,8 @@
               </div>
             </a>
           </section>
-          <section class="mt-[60px] sm:mt-28 mx-auto">
-            <a href="#webDev" alt="Mythrill" target="_blank" class="w-fit">
+          <section class="mt-[60px] sm:mt-32 mx-auto">
+            <a alt="Pacific Panorama 3D Virtual Tours by Matterport" class="cursor-pointer">
               <div class="card1">
                 <div class="wrapper">
                   <img src="./images/dollhouse.avif" class="cover-image" />
@@ -80,8 +80,8 @@
               </div>
             </a>
           </section>
-          <section class="mt-[60px] sm:mt-28 mx-auto md:col-span-2 xl:col-span-1">
-            <a href="#webDev" alt="Mythrill" target="_blank" class="w-fit">
+          <section class="mt-[60px] sm:mt-32 mx-auto md:col-span-2 xl:col-span-1">
+            <a alt="Pacific Panorama Photography and Drone Photos" class="cursor-pointer">
               <div class="card1">
                 <div class="wrapper">
                   <img src="./images/houses/DJI_0297-HDR.avif" class="cover-image" />
@@ -266,9 +266,6 @@
     </form>
   </section>
 
-
-
-
         <footer class="w-full h-36 grid border border-primary bg-fibres">
             <ul class="grid grid-cols-3 text-center font-sans font-thin text-2xl md:text-4xl text-primary mx-auto">
                 <a class="hover:cursor-pointer hover:bg-accent flex items-center justify-center p-2"><li class="col-start-2 col-end-3 flex justify-center items-center">About</li></a>
@@ -277,40 +274,36 @@
             </ul>
         </footer>
 
-
-
-
        <script>
           console.log('%cHover Card credits to: Gayane Gasparyan ♥ @ https://codepen.io/gayane-gasparyan', 'background: linear-gradient(blue, orange); border-radius: 5px; padding: 5px;')
        </script>
 
        <script>
-        let photoRadio, webRadio, photoSection, webSection;
+          let photoRadio, webRadio, photoSection, webSection;
 
-        photoRadio = document.getElementById('photoRadio');
-        webRadio = document.getElementById('webRadio');
+          photoRadio = document.getElementById('photoRadio');
+          webRadio = document.getElementById('webRadio');
 
-        photoSection = document.getElementById('photoSection');
-        webSection = document.getElementById('webSection');
+          photoSection = document.getElementById('photoSection');
+          webSection = document.getElementById('webSection');
 
-        photoRadio.addEventListener('click', e => {
-          if (e.target.checked) {
-            photoSection.classList.add('flex');
-            photoSection.classList.remove('hidden')
-            webSection.classList.remove('flex')
-            webSection.classList.add('hidden');
-          }
+          photoRadio.addEventListener('click', e => {
+            if (e.target.checked) {
+              photoSection.classList.add('flex');
+              photoSection.classList.remove('hidden')
+              webSection.classList.remove('flex')
+              webSection.classList.add('hidden');
+            }
 
-        });
-        webRadio.addEventListener('click', e => {
-          if (e.target.checked) {
-            webSection.classList.add('flex');
-            webSection.classList.remove('hidden')
-            photoSection.classList.remove('flex')
-            photoSection.classList.add('hidden');
-          }
-        });
-
+          });
+          webRadio.addEventListener('click', e => {
+            if (e.target.checked) {
+              webSection.classList.add('flex');
+              webSection.classList.remove('hidden')
+              photoSection.classList.remove('flex')
+              photoSection.classList.add('hidden');
+            }
+          });
        </script>
        <script type="text/javascript"
        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -360,9 +353,30 @@
         document.querySelector('#submitWebForm').addEventListener('click', e => {
           submitForm(e);
         });
+
+
       </script>
-      <script>
-        
+      <script type="module">
+        import { gsap } from 'gsap';
+
+        gsap.from('#webDev', 
+        {
+          x: 500,
+          opacity: 0,
+          duration: 2
+        });
+        gsap.from('#tours', 
+        {
+          x: -500,
+          opacity: 0,
+          duration: 2
+        });
+        gsap.from('#photos', 
+        {
+          y: 500,
+          opacity: 0,
+          duration: 2
+        });
       </script>
 
     </body>
