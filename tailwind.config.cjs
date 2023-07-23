@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        '60lines': "url('./images/lines.png')",
-        'fibres': "url('./images/translucent-fibres.png')",
+        '60lines': "url('/images/lines.png')",
+        'fibres': "url('/images/translucent-fibres.png')",
+        'twill': "url('/images/black-twill.png')",
       }
     },
   },

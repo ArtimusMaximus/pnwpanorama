@@ -7,7 +7,7 @@
   <link href="style.css" rel="stylesheet">
   <link href="3dcard.css" rel="stylesheet">
 </head>
-    <body class="h-full py-5 bg-base-200">
+    <body class="h-full bg-base-200">
         <!-- <nav class="w-full h-36 grid border border-primary">
             <ul class="grid grid-cols-5 text-center">
                 <li class="col-start-2 col-end-3 flex justify-center items-center">About</li>
@@ -15,12 +15,12 @@
                 <li class="col-start-4 col-end-5 flex justify-center items-center">Contact</li>
             </ul>
         </nav> -->
-        <main class="w-full grid grid-cols-3 gap-4 h-full bg-white border border-neutral-content p-4 mx-auto">
+        <main class="w-full grid grid-cols-3 gap-4 h-full bg-white border border-neutral-content p-4 mx-auto bg-fibres">
             <div class="col-start-1 col-end-4 flex flex-col items-center justify-center">
-                <h1 class="bg-neutral text-4xl md:text-7xl col-start-2 col-end-3 p-5 font-sans text-center text-info shadow-2xl rounded-xl mb-4">
+                <h1 class="text-4xl sm:text-6xl lg:text-8xl col-start-2 col-end-3 p-5 font-sans text-center text-info  mb-4">
                     Pacific Panorama L.L.C.
                 </h1>
-                <h2 class="text-accent hidden 2xl:block text-5xl p-5 font-thin font-sans shadow-2xl rounded-xl bg-neutral">
+                <h2 class="text-accent hidden 2xl:block text-5xl p-5 font-thin font-sans ">
                   <i>Web Development • 3D Virtual Tours • R.E. Photography</i>
                 </h2>
                 <ul class="2xl:hidden text-accent text-3xl md:text-5xl p-5 font-thin font-sans text-center">
@@ -32,9 +32,9 @@
             <!-- <picture class="p-4 col-start-1 col-end-4 row-start-2 mx-auto">
               <img class="border-4 border-dashed border-white rounded-md" src="./images/carousel/DSC05747-HDR-Edit.avif" alt="">
             </picture> -->
-            <div class="p-4 col-start-1 col-end-4 row-start-2 flex items-center justify-center md:text-4xl bg-neutral w-fit mx-auto my-auto h-fit rounded-lg">
+            <div class="p-4 col-start-1 col-end-4 row-start-2 mt-8 flex items-center justify-center md:text-4xl underline w-fit mx-auto my-auto h-fit rounded-lg">
               <ul class="font-thin font-sans">
-                <li class="text-2xl text-center shadow-2xl rounded-xl text-base-content bg-neutral">Serving Everett & N. Seattle, WA</li>
+                <li class="text-2xl text-center text-base-300">Serving Everett & N. Seattle, WA</li>
                 <!-- <li class="text-2xl text-center">Web Development & Photography services</li> -->
                 <!-- <li>Web development encompassing:</li>
                 <li>-Personally tailored web sites</li>
@@ -49,18 +49,18 @@
             <h1 class="text-center text-6xl font-thin font-sans text-white py-4">Services</h1>
           <hr />
         </div>
-        <div class="flex flex-col items-center justify-center md:grid md:grid-cols-2 md:grid-rows-2 xl:grid-rows-1 xl:grid-cols-3">
+        <div class="flex flex-col items-center justify-center md:grid md:grid-cols-2 md:grid-rows-2 xl:grid-rows-1 xl:grid-cols-3 bg-twill pb-32">
           <!-- <div class="service mx-auto">
             <div class="m-4 p-4 w-72 h-72 sm:w-96 sm:h-96 bg-none bg-opacity-70 mx-auto">
               <img class="serviceCard mx-auto" src="./images/pexels-karsten-madsen-18105.jpg" alt="">
               <p class="text-xl mt-3 font-thin font-sans">Web Development</p>
             </div>
           </div> -->
-          <section class="mt-[60px] sm:mt-32 mx-auto ">
-            <a alt="Pacific Panorama LLC Web Development" class="cursor-pointer">
+          <section class="mt-[60px] sm:mt-32 mx-auto">
+            <a alt="Pacific Panorama Web App. Development" class="cursor-pointer cardLink" onclick="return false">
               <div class="card1">
                 <div class="wrapper">
-                  <img src="./images/pexels-karsten-madsen-18105.jpg" class="cover-image grayscale" />
+                  <img src="./images/pexels-karsten-madsen-18105.jpg" class="cover-image" />
                   <h1 class="p-4 text-accent text-2xl font-sans font-bold border border-neutral-content">Web Development</h1>
                 </div>
                 <!-- <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" /> -->
@@ -69,7 +69,7 @@
             </a>
           </section>
           <section class="mt-[60px] sm:mt-32 mx-auto">
-            <a alt="Pacific Panorama 3D Virtual Tours by Matterport" class="cursor-pointer">
+            <a alt="Pacific Panorama 3D Virtual Tours by Matterport" class="cursor-pointer cardLink" onclick="return false">
               <div class="card1">
                 <div class="wrapper">
                   <img src="./images/dollhouse.avif" class="cover-image" />
@@ -81,7 +81,7 @@
             </a>
           </section>
           <section class="mt-[60px] sm:mt-32 mx-auto md:col-span-2 xl:col-span-1">
-            <a alt="Pacific Panorama Photography and Drone Photos" class="cursor-pointer">
+            <a alt="Pacific Panorama Photography and Drone Photos" class="cursor-pointer cardLink" onclick="return false">
               <div class="card1">
                 <div class="wrapper">
                   <img src="./images/houses/DJI_0297-HDR.avif" class="cover-image" />
@@ -108,7 +108,7 @@
         
         
         <div class="bg-neutral">
-          <hr class="mt-32" />
+          <hr class="" />
             <h1 class="text-center text-6xl font-thin font-sans text-white py-4">Gallery</h1>
           <hr />
         </div>
@@ -152,7 +152,7 @@
           </div>
         </div>
   </div>
-  <!-- request a quote -->
+  <!-- Request a Quote -->
   <div class="flex items-center justify-center flex-col">
     <div class="bg-neutral w-full">
       <hr />
@@ -175,23 +175,25 @@
   </div>
   <!-- 3D / Photo quote section -->
   <section id="photoSection" class="hidden items-center justify-center mb-5">
-    <form id="photoForm" class="font-sans font-thin" method="post" enctype="multipart/form-data">
-      <select name="for_service" class="select select-primary w-full sm:w-72 max-w-xs m-2 ">
-        <option disabled selected>Property Type?</option>
-        <option>House</option>
-        <option>Condo</option>
-        <option>Apartment</option>
-        <option>Industrial Building</option>
-        <option>Construction Site</option>
-      </select>
-      <select name="service_details" class="select select-primary w-full sm:w-72 max-w-xs m-2">
-        <option disabled selected>Approx sq. footage?</option>
-        <option>500-1500</option>
-        <option>1500-2000</option>
-        <option>2000-2500</option>
-        <option>2500-3500</option>
-        <option>3500+</option>
-      </select>
+    <form id="photoForm" class="font-sans font-thin " method="post" enctype="multipart/form-data">
+      <div class="flex items-center justify-center flex-col">
+        <select name="for_service" class="select select-primary w-full sm:w-72 max-w-xs m-2">
+          <option disabled selected>Property Type?</option>
+          <option>House</option>
+          <option>Condo</option>
+          <option>Apartment</option>
+          <option>Industrial Building</option>
+          <option>Construction Site</option>
+        </select>
+        <select name="service_details" class="select select-primary w-full sm:w-72 max-w-xs m-2">
+          <option disabled selected>Approx sq. footage?</option>
+          <option>500-1500</option>
+          <option>1500-2000</option>
+          <option>2000-2500</option>
+          <option>2500-3500</option>
+          <option>3500+</option>
+        </select>
+    </div>
       <div class="form-control w-full max-w-xs p-2 mx-auto">
         <label class="label">
           <span class="label-text">Contact Email</span>
@@ -211,7 +213,7 @@
         </label>
         <textarea name="text_body" class="inField textarea textarea-bordered h-24 w-3/4 mx-auto" placeholder="Add additional info. or comments here..."></textarea>
         <label class="label mx-auto">
-          <span class="label-text-alt">E.G. "Are floor plans possible?", "What is your turn around time for pictures?"</span>
+          <span class="label-text-alt px-12">E.G. "Are floor plans possible?", "What is your turn around time for pictures?"</span>
         </label>
       </div>
       <div class="flex items-center justify-center">
@@ -222,22 +224,24 @@
 
 
   <!--web project section -->
-   <section id="webSection" class="hidden items-center justify-center flex-col mb-5 mx-auto">
+   <section id="webSection" class="hidden items-center justify-center mb-5">
     <form id="webForm" class="font-sans font-thin" method="post" enctype="multipart/form-data">
-      <select name="for_service" class="select select-accent w-full sm:w-72 max-w-xs m-2">
-        <option disabled selected>Project Type?</option>
-        <option>Brand New Website</option>
-        <option>Website remodel</option>
-        <option>Web application</option>
-      </select>
-      <select name="service_details" class="select select-accent w-full sm:w-72 max-w-xs m-2">
-        <option disabled selected>Content Pages</option>
-        <option>1-5</option>
-        <option>5-10</option>
-        <option>10-15</option>
-        <option>15-20</option>
-        <option>20+</option>
-      </select>
+      <div class="flex items-center justify-center flex-col">
+        <select name="for_service" class="select select-accent w-full sm:w-72 max-w-xs m-2">
+          <option disabled selected>Project Type?</option>
+          <option>Brand New Website</option>
+          <option>Website remodel</option>
+          <option>Web application</option>
+        </select>
+        <select name="service_details" class="select select-accent w-full sm:w-72 max-w-xs m-2">
+          <option disabled selected>Content Pages</option>
+          <option>1-5</option>
+          <option>5-10</option>
+          <option>10-15</option>
+          <option>15-20</option>
+          <option>20+</option>
+        </select>
+      </div>
       <div class="form-control w-full max-w-xs p-2 mx-auto">
         <label class="label">
           <span class="label-text">Contact Email</span>
@@ -257,7 +261,7 @@
         </label>
         <textarea name="text_body" class="inField textarea textarea-bordered h-24 w-3/4 mx-auto" placeholder="Add additional info. or comments here..."></textarea>
         <label class="label mx-auto">
-          <span class="label-text-alt">E.G. "This is a redesign of an existing page..."</span>
+          <span class="label-text-alt px-24">E.G. "This is a redesign of an existing page..."</span>
         </label>
       </div>
       <div class="flex items-center justify-center">
@@ -266,7 +270,7 @@
     </form>
   </section>
 
-        <footer class="w-full h-36 grid border border-primary bg-fibres">
+        <footer class="w-full h-36 grid border border-primary bg-white bg-fibres">
             <ul class="grid grid-cols-3 text-center font-sans font-thin text-2xl md:text-4xl text-primary mx-auto">
                 <a class="hover:cursor-pointer hover:bg-accent flex items-center justify-center p-2"><li class="col-start-2 col-end-3 flex justify-center items-center">About</li></a>
                 <a class="hover:cursor-pointer hover:bg-accent flex items-center justify-center p-2"><li class="col-start-3 col-end-4 flex justify-center items-center">Info</li></a>
@@ -308,7 +312,7 @@
        <script type="text/javascript"
        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
       </script>
-      <script type="text/javascript">
+      <script type="text/javascript" defer>
         let formID;
         document.querySelectorAll('.radio').forEach((radio) => {
           radio.addEventListener('click', e => {
@@ -357,26 +361,55 @@
 
       </script>
       <script type="module">
-        import { gsap } from 'gsap';
+        import { gsap, TimelineMax } from 'gsap';
+        import bgImg from './images/lines.png';
 
-        gsap.from('#webDev', 
-        {
-          x: 500,
-          opacity: 0,
-          duration: 2
-        });
-        gsap.from('#tours', 
-        {
-          x: -500,
-          opacity: 0,
-          duration: 2
+        // window.onload = function() {
+        //   document.querySelectorAll('.cardLink').forEach(link => {
+        //     link.addEventListener('click', e => {
+        //       e.preventDefault();
+        //       console.log(e);
+        //     });
+        //   });
+        // }
+        setTimeout(() => {
+          // animate();
+        }, 500)
+        function animate() {
+          gsap.from('#webDev', 
+          {
+            x: 500,
+            opacity: 1,
+            duration: 1.5,
+            ease: 'elastic'
+          });
+          gsap.from('#tours', 
+          {
+            x: -500,
+            opacity: 0,
+          duration: 1.5,
+          ease: 'elastic'
         });
         gsap.from('#photos', 
         {
           y: 500,
           opacity: 0,
-          duration: 2
+          duration: 1.5,
+          ease: 'elastic'
         });
+      }
+
+      function titleIn() {
+        let tl = new TimelineMax({
+          onStart: () => { console.log('start') },
+          onComplete: () => { console.log('end') }
+        });
+        tl.from('#webDev', 1, {
+          x: 300,
+          ease: 'elastic',
+        }, 0)
+      }
+      // titleIn()
       </script>
 
     </body>
