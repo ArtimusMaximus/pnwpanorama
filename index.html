@@ -44,9 +44,11 @@
               </ul>
             </div>
         </main>
-        <hr />
-          <h1 class="text-center text-6xl font-thin font-sans text-white py-4">Services</h1>
-        <hr />
+        <div class="bg-neutral">
+          <hr />
+            <h1 class="text-center text-6xl font-thin font-sans text-white py-4">Services</h1>
+          <hr />
+        </div>
         <div class="flex flex-col items-center justify-center md:grid md:grid-cols-2 md:grid-rows-2 xl:grid-rows-1 xl:grid-cols-3">
           <!-- <div class="service mx-auto">
             <div class="m-4 p-4 w-72 h-72 sm:w-96 sm:h-96 bg-none bg-opacity-70 mx-auto">
@@ -59,7 +61,7 @@
               <div class="card1">
                 <div class="wrapper">
                   <img src="./images/pexels-karsten-madsen-18105.jpg" class="cover-image grayscale" />
-                  <h1 class="p-1 text-accent text-2xl font-sans font-bold border border-neutral-content">Web Development</h1>
+                  <h1 class="p-4 text-accent text-2xl font-sans font-bold border border-neutral-content">Web Development</h1>
                 </div>
                 <!-- <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" /> -->
                 <img src="./images/laptop_popup.png" class="character" />
@@ -71,7 +73,7 @@
               <div class="card1">
                 <div class="wrapper">
                   <img src="./images/dollhouse.avif" class="cover-image" />
-                  <h1 class="p-1 text-accent text-2xl font-sans font-bold border border-neutral-content">3D Tours</h1>
+                  <h1 class="p-4 text-primary text-2xl font-sans font-bold border border-neutral-content">3D Tours</h1>
                 </div>
                 <!-- <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" /> -->
                 <img src="./images/pro2card.png" class="character" />
@@ -83,7 +85,7 @@
               <div class="card1">
                 <div class="wrapper">
                   <img src="./images/houses/DJI_0297-HDR.avif" class="cover-image" />
-                  <h1 class="p-1 text-accent text-2xl font-sans font-bold border border-neutral-content">Photography (+Drone)</h1>
+                  <h1 class="p-4 text-primary text-2xl font-sans font-bold border border-neutral-content">Photography</h1>
                 </div>
                 <!-- <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" /> -->
                 <img src="./images/mair2_edit.png" class="character" />
@@ -105,71 +107,76 @@
         </div>
         
         
-        
+        <div class="bg-neutral">
           <hr class="mt-32" />
             <h1 class="text-center text-6xl font-thin font-sans text-white py-4">Gallery</h1>
           <hr />
+        </div>
         <div class="w-full sm:w-3/4 mx-auto">
           
-        <div class="carousel">
+        <div class="carousel mt-1">
           <div id="slide1" class="carousel-item relative w-full h-fit">
             <img src="/images/carousel/DSC04032-HDR.avif" class="h-3/4 object-cover mx-auto" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
-              <a href="#slide5" class="btn btn-circle">❮</a> 
-              <a href="#slide2" class="btn btn-circle">❯</a>
+              <a href="#slide5" class="btn btn-circle btn-primary">❮</a> 
+              <a href="#slide2" class="btn btn-circle btn-primary">❯</a>
             </div>
           </div> 
           <div id="slide2" class="carousel-item relative w-full h-fit">
             <img src="/images/carousel/DSC06360-HDR-Edit.avif" class="h-3/4 object-cover mx-auto" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
-              <a href="#slide1" class="btn btn-circle">❮</a> 
-              <a href="#slide3" class="btn btn-circle">❯</a>
+              <a href="#slide1" class="btn btn-circle btn-primary">❮</a> 
+              <a href="#slide3" class="btn btn-circle btn-primary">❯</a>
             </div>
           </div> 
           <div id="slide3" class="carousel-item relative w-full h-fit">
             <img src="/images/carousel/DSC05747-HDR-Edit.avif" class="h-3/4 object-cover mx-auto" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
-              <a href="#slide2" class="btn btn-circle">❮</a> 
-              <a href="#slide4" class="btn btn-circle">❯</a>
+              <a href="#slide2" class="btn btn-circle btn-primary">❮</a> 
+              <a href="#slide4" class="btn btn-circle btn-primary">❯</a>
             </div>
           </div> 
           <div id="slide4" class="carousel-item relative w-full h-fit">
             <img src="/images/carousel/DSC05908-HDR.avif" class="h-3/4 object-cover mx-auto" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
-              <a href="#slide3" class="btn btn-circle">❮</a> 
-              <a href="#slide5" class="btn btn-circle">❯</a>
+              <a href="#slide3" class="btn btn-circle btn-primary">❮</a> 
+              <a href="#slide5" class="btn btn-circle btn-primary">❯</a>
             </div>
           </div>
           <div id="slide5" class="carousel-item relative w-full h-fit">
             <img src="/images/carousel/DSC05728-HDR.avif" class="h-3/4 object-cover mx-auto" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
-              <a href="#slide4" class="btn btn-circle">❮</a> 
-              <a href="#slide1" class="btn btn-circle">❯</a>
+              <a href="#slide4" class="btn btn-circle btn-primary">❮</a> 
+              <a href="#slide1" class="btn btn-circle btn-primary">❯</a>
             </div>
           </div>
         </div>
   </div>
   <!-- request a quote -->
   <div class="flex items-center justify-center flex-col">
-      <h1 class="text-white text-4xl p-4 font-sans font-thin">Request a Quotation</h1>
-      <h2 class="font-sans font-thin">This is a quotation for:</h2>
+    <div class="bg-neutral w-full">
+      <hr />
+        <h1 class="text-white text-6xl p-4 font-sans font-thin text-center">Request a Quotation</h1>
+      <hr />
+    </div>
+      <h2 class="font-sans font-thin mt-4">This is a quotation for:</h2>
       <div class="form-control">
         <label class="label cursor-pointer">
-          <span class="label-text">3D / Photography</span> 
+          <span class="label-text mr-2 font-sans font-thin">3D / Photography</span> 
           <input id="photoRadio" type="radio" name="radio-10" class="radio checked:bg-blue-500"  />
         </label>
       </div>
       <div class="form-control">
         <label class="label cursor-pointer">
-          <span class="label-text">Web Project</span> 
+          <span class="label-text mr-[42px] font-sans font-thin">Web Project</span> 
           <input id="webRadio" type="radio" name="radio-10" class="radio checked:bg-red-500" />
         </label>
       </div>
   </div>
   <!-- 3D / Photo quote section -->
   <section id="photoSection" class="hidden items-center justify-center mb-5">
-    <form class="font-sans font-thin">
-      <select class="select select-accent w-5/6 sm:w-72 max-w-xs m-2">
+    <form id="photoForm" class="font-sans font-thin" method="post" enctype="multipart/form-data">
+      <select name="for_service" class="select select-primary w-full sm:w-72 max-w-xs m-2 ">
         <option disabled selected>Property Type?</option>
         <option>House</option>
         <option>Condo</option>
@@ -177,7 +184,7 @@
         <option>Industrial Building</option>
         <option>Construction Site</option>
       </select>
-      <select class="select select-accent w-5/6 sm:w-72 max-w-xs m-2">
+      <select name="service_details" class="select select-primary w-full sm:w-72 max-w-xs m-2">
         <option disabled selected>Approx sq. footage?</option>
         <option>500-1500</option>
         <option>1500-2000</option>
@@ -190,25 +197,25 @@
           <span class="label-text">Contact Email</span>
           <span class="label-text">(required)</span>
         </label>
-        <input type="email" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" required />
+        <input name="from_email" type="email" placeholder="Type here" class="inField input input-bordered input-primary w-full max-w-xs" required />
       </div>
       <div class="form-control w-full max-w-xs p-2 mx-auto">
         <label class="label">
           <span class="label-text">Contact Name</span>
         </label>
-        <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
+        <input name="from_name" type="text" placeholder="Type here" class="inField input input-bordered input-primary w-full max-w-xs" />
       </div>
       <div class="form-control">
         <label class="label mx-auto">
           <span class="label-text">Additional Information</span>
         </label>
-        <textarea class="textarea textarea-bordered h-24 w-3/4 mx-auto" placeholder="Add additional info. or comments here..."></textarea>
+        <textarea name="text_body" class="inField textarea textarea-bordered h-24 w-3/4 mx-auto" placeholder="Add additional info. or comments here..."></textarea>
         <label class="label mx-auto">
           <span class="label-text-alt">E.G. "Are floor plans possible?", "What is your turn around time for pictures?"</span>
         </label>
       </div>
       <div class="flex items-center justify-center">
-        <button type="submit" class="btn btn-primary mt-5">Send Inquiry</button>
+        <button id="submitPhotoForm" type="submit" class="btn btn-primary mt-5">Send Inquiry</button>
       </div>
     </form>
   </section>
@@ -216,14 +223,14 @@
 
   <!--web project section -->
    <section id="webSection" class="hidden items-center justify-center flex-col mb-5 mx-auto">
-    <form class="font-sans font-thin">
-      <select class="select select-accent w-5/6 sm:w-72 max-w-xs m-2">
+    <form id="webForm" class="font-sans font-thin" method="post" enctype="multipart/form-data">
+      <select name="for_service" class="select select-accent w-full sm:w-72 max-w-xs m-2">
         <option disabled selected>Project Type?</option>
         <option>Brand New Website</option>
         <option>Website remodel</option>
         <option>Web application</option>
       </select>
-      <select class="select select-accent w-5/6 sm:w-72 max-w-xs m-2">
+      <select name="service_details" class="select select-accent w-full sm:w-72 max-w-xs m-2">
         <option disabled selected>Content Pages</option>
         <option>1-5</option>
         <option>5-10</option>
@@ -236,25 +243,25 @@
           <span class="label-text">Contact Email</span>
           <span class="label-text">(required)</span>
         </label>
-        <input type="email" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" required />
+        <input name="from_email" type="email" placeholder="Type here" class="inField input input-bordered input-accent w-full max-w-xs" required />
       </div>
       <div class="form-control w-full max-w-xs p-2 mx-auto">
         <label class="label">
           <span class="label-text">Contact Name</span>
         </label>
-        <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
+        <input name="from_name" type="text" placeholder="Type here" class="inField input input-bordered input-accent w-full max-w-xs" />
       </div>
       <div class="form-control">
         <label class="label mx-auto">
           <span class="label-text">Additional Information</span>
         </label>
-        <textarea class="textarea textarea-bordered h-24 w-3/4 mx-auto" placeholder="Add additional info. or comments here..."></textarea>
+        <textarea name="text_body" class="inField textarea textarea-bordered h-24 w-3/4 mx-auto" placeholder="Add additional info. or comments here..."></textarea>
         <label class="label mx-auto">
           <span class="label-text-alt">E.G. "This is a redesign of an existing page..."</span>
         </label>
       </div>
       <div class="flex items-center justify-center">
-        <button type="submit" class="btn btn-primary mt-5">Send Inquiry</button>
+        <button id="submitWebForm" class="btn btn-primary mt-5">Send Inquiry</button>
       </div>
     </form>
   </section>
@@ -287,30 +294,76 @@
         webSection = document.getElementById('webSection');
 
         photoRadio.addEventListener('click', e => {
-          console.log(e.target.checked);
-
           if (e.target.checked) {
-            
             photoSection.classList.add('flex');
             photoSection.classList.remove('hidden')
             webSection.classList.remove('flex')
             webSection.classList.add('hidden');
-          
           }
 
         });
         webRadio.addEventListener('click', e => {
-          
           if (e.target.checked) {
             webSection.classList.add('flex');
             webSection.classList.remove('hidden')
             photoSection.classList.remove('flex')
             photoSection.classList.add('hidden');
           }
-
         });
 
        </script>
+       <script type="text/javascript"
+       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+      </script>
+      <script type="text/javascript">
+        let formID;
+        document.querySelectorAll('.radio').forEach((radio) => {
+          radio.addEventListener('click', e => {
+            if (e.target.id === 'webRadio') {
+              formID = 'webForm';
+            } else if (e.target.id === 'photoRadio') {
+              formID = 'photoForm'
+            }
+            console.log(formID);
+          })
+        })
+        const emailjsObj = {
+          publicKey: 'z_9kRE5DNBG4paR3d',
+          service_id: 'service_nyzo8da',
+          template_id: 'template_390imic'
+        };
+        const { publicKey, service_id, template_id } = emailjsObj;
+
+
+        (function(){
+          emailjs.init(publicKey);
+        })();
+
+        function submitForm(e) {
+          e.preventDefault();
+          emailjs.sendForm(service_id, template_id, `#${formID}`)
+          .then(function(res) {
+            console.log('SUCCESS!', res.status, res.text);
+            if (res.status === 200) {
+              document.querySelectorAll('.inField').forEach((i) => {
+                i.value = '';
+              });
+              
+            }
+          }, function(error) {
+            console.log('FAILED...', error);
+          });
+        }
+        document.querySelector('#submitPhotoForm').addEventListener('click', e => {
+          submitForm(e);
+        });
+        document.querySelector('#submitWebForm').addEventListener('click', e => {
+          submitForm(e);
+        });
+      </script>
+      <script>
+        
+      </script>
 
     </body>
 </html>
