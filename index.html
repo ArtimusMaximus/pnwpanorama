@@ -15,7 +15,7 @@
                 <li class="col-start-4 col-end-5 flex justify-center items-center">Contact</li>
             </ul>
         </nav> -->
-        <main class="w-full sm:w-3/4 grid grid-cols-3 gap-4 h-full border border-neutral-content p-4 mx-auto bg-60lines">
+        <main class="w-full grid grid-cols-3 gap-4 h-full bg-white border border-neutral-content p-4 mx-auto">
             <div class="col-start-1 col-end-4 flex flex-col items-center justify-center">
                 <h1 class="bg-neutral text-4xl md:text-7xl col-start-2 col-end-3 p-5 font-sans text-center text-info shadow-2xl rounded-xl mb-4">
                     Pacific Panorama L.L.C.
@@ -43,14 +43,9 @@
                 <li>Real Estate 3D Tours via Matterport</li> -->
               </ul>
             </div>
-            
-
-            <!-- carousel -->
-            
-              
-            
-            
         </main>
+        <hr />
+          <h1 class="text-center text-6xl font-thin font-sans text-white py-4">Services</h1>
         <hr />
         <div class="flex flex-col items-center justify-center md:grid md:grid-cols-2 md:grid-rows-2 xl:grid-rows-1 xl:grid-cols-3">
           <!-- <div class="service mx-auto">
@@ -108,45 +103,46 @@
             </div>
           </div> -->
         </div>
-
         
-
-
-
-<div class="w-full sm:w-3/4 mx-auto mt-32">
-  <h1 class="text-center text-6xl pb-1 font-thin font-sans text-white">Gallery</h1>
-        <div class="carousel h-full">
-          <div id="slide1" class="carousel-item relative w-full">
+        
+        
+          <hr class="mt-32" />
+            <h1 class="text-center text-6xl font-thin font-sans text-white py-4">Gallery</h1>
+          <hr />
+        <div class="w-full sm:w-3/4 mx-auto">
+          
+        <div class="carousel">
+          <div id="slide1" class="carousel-item relative w-full h-fit">
             <img src="/images/carousel/DSC04032-HDR.avif" class="h-3/4 object-cover mx-auto" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[38%]">
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
               <a href="#slide5" class="btn btn-circle">❮</a> 
               <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div> 
-          <div id="slide2" class="carousel-item relative w-full">
+          <div id="slide2" class="carousel-item relative w-full h-fit">
             <img src="/images/carousel/DSC06360-HDR-Edit.avif" class="h-3/4 object-cover mx-auto" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[38%]">
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
               <a href="#slide1" class="btn btn-circle">❮</a> 
               <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
           </div> 
-          <div id="slide3" class="carousel-item relative w-full">
+          <div id="slide3" class="carousel-item relative w-full h-fit">
             <img src="/images/carousel/DSC05747-HDR-Edit.avif" class="h-3/4 object-cover mx-auto" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[38%]">
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
               <a href="#slide2" class="btn btn-circle">❮</a> 
               <a href="#slide4" class="btn btn-circle">❯</a>
             </div>
           </div> 
-          <div id="slide4" class="carousel-item relative w-full">
+          <div id="slide4" class="carousel-item relative w-full h-fit">
             <img src="/images/carousel/DSC05908-HDR.avif" class="h-3/4 object-cover mx-auto" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[38%]">
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
               <a href="#slide3" class="btn btn-circle">❮</a> 
               <a href="#slide5" class="btn btn-circle">❯</a>
             </div>
           </div>
-          <div id="slide5" class="carousel-item relative w-full">
+          <div id="slide5" class="carousel-item relative w-full h-fit">
             <img src="/images/carousel/DSC05728-HDR.avif" class="h-3/4 object-cover mx-auto" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[38%]">
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
               <a href="#slide4" class="btn btn-circle">❮</a> 
               <a href="#slide1" class="btn btn-circle">❯</a>
             </div>
@@ -156,25 +152,24 @@
   <!-- request a quote -->
   <div class="flex items-center justify-center flex-col">
       <h1 class="text-white text-4xl p-4 font-sans font-thin">Request a Quotation</h1>
-      <h2>This is a quotation for:</h2>
+      <h2 class="font-sans font-thin">This is a quotation for:</h2>
       <div class="form-control">
         <label class="label cursor-pointer">
           <span class="label-text">3D / Photography</span> 
-          <input type="radio" name="radio-10" class="radio checked:bg-blue-500"  checked />
+          <input id="photoRadio" type="radio" name="radio-10" class="radio checked:bg-blue-500"  />
         </label>
       </div>
       <div class="form-control">
         <label class="label cursor-pointer">
           <span class="label-text">Web Project</span> 
-          <input type="radio" name="radio-10" class="radio checked:bg-red-500" />
+          <input id="webRadio" type="radio" name="radio-10" class="radio checked:bg-red-500" />
         </label>
       </div>
-      
   </div>
   <!-- 3D / Photo quote section -->
-  <section id="photoSection" class="flex items-center justify-center flex-col mb-5">
+  <section id="photoSection" class="hidden items-center justify-center mb-5">
     <form class="font-sans font-thin">
-      <select class="select select-accent w-5/6 sm:w-full max-w-xs m-2">
+      <select class="select select-accent w-5/6 sm:w-72 max-w-xs m-2">
         <option disabled selected>Property Type?</option>
         <option>House</option>
         <option>Condo</option>
@@ -182,7 +177,7 @@
         <option>Industrial Building</option>
         <option>Construction Site</option>
       </select>
-      <select class="select select-accent w-5/6 sm:w-full max-w-xs m-2">
+      <select class="select select-accent w-5/6 sm:w-72 max-w-xs m-2">
         <option disabled selected>Approx sq. footage?</option>
         <option>500-1500</option>
         <option>1500-2000</option>
@@ -190,71 +185,77 @@
         <option>2500-3500</option>
         <option>3500+</option>
       </select>
-      <div class="form-control w-full max-w-xs p-2">
+      <div class="form-control w-full max-w-xs p-2 mx-auto">
         <label class="label">
           <span class="label-text">Contact Email</span>
           <span class="label-text">(required)</span>
         </label>
         <input type="email" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" required />
       </div>
-      <div class="form-control w-full max-w-xs p-2">
+      <div class="form-control w-full max-w-xs p-2 mx-auto">
         <label class="label">
           <span class="label-text">Contact Name</span>
         </label>
         <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
       </div>
       <div class="form-control">
-        <label class="label">
+        <label class="label mx-auto">
           <span class="label-text">Additional Information</span>
         </label>
-        <textarea class="textarea textarea-bordered h-24 w-3/4" placeholder="Add additional info. or comments here..."></textarea>
-        <label class="label">
+        <textarea class="textarea textarea-bordered h-24 w-3/4 mx-auto" placeholder="Add additional info. or comments here..."></textarea>
+        <label class="label mx-auto">
           <span class="label-text-alt">E.G. "Are floor plans possible?", "What is your turn around time for pictures?"</span>
         </label>
       </div>
-      <button type="submit" class="btn btn-primary mt-5">Send Inquiry</button>
+      <div class="flex items-center justify-center">
+        <button type="submit" class="btn btn-primary mt-5">Send Inquiry</button>
+      </div>
     </form>
   </section>
-  <!-- web project section -->
-  <section id="webSection" class="items-center justify-center flex-col mb-5 hidden">
+
+
+  <!--web project section -->
+   <section id="webSection" class="hidden items-center justify-center flex-col mb-5 mx-auto">
     <form class="font-sans font-thin">
-      <select class="select select-accent w-5/6 sm:w-full max-w-xs m-2">
+      <select class="select select-accent w-5/6 sm:w-72 max-w-xs m-2">
         <option disabled selected>Project Type?</option>
         <option>Brand New Website</option>
         <option>Website remodel</option>
         <option>Web application</option>
       </select>
-      <select class="select select-accent w-5/6 sm:w-full max-w-xs m-2">
-        <option disabled selected>Content Pages (approx.)</option>
+      <select class="select select-accent w-5/6 sm:w-72 max-w-xs m-2">
+        <option disabled selected>Content Pages</option>
         <option>1-5</option>
         <option>5-10</option>
         <option>10-15</option>
         <option>15-20</option>
         <option>20+</option>
       </select>
-      <div class="form-control w-full max-w-xs p-2">
+      <div class="form-control w-full max-w-xs p-2 mx-auto">
         <label class="label">
           <span class="label-text">Contact Email</span>
           <span class="label-text">(required)</span>
         </label>
         <input type="email" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" required />
       </div>
-      <div class="form-control w-full max-w-xs p-2">
+      <div class="form-control w-full max-w-xs p-2 mx-auto">
         <label class="label">
           <span class="label-text">Contact Name</span>
         </label>
         <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full max-w-xs" />
       </div>
       <div class="form-control">
-        <label class="label">
+        <label class="label mx-auto">
           <span class="label-text">Additional Information</span>
         </label>
-        <textarea class="textarea textarea-bordered h-24 w-3/4" placeholder="Add additional info. or comments here..."></textarea>
-        <label class="label">
-          <span class="label-text-alt">E.G. "Are floor plans possible?", "What is your turn around time for pictures?"</span>
+        <textarea class="textarea textarea-bordered h-24 w-3/4 mx-auto" placeholder="Add additional info. or comments here..."></textarea>
+        <label class="label mx-auto">
+          <span class="label-text-alt">E.G. "This is a redesign of an existing page..."</span>
         </label>
       </div>
-      <button type="submit" class="btn btn-primary mt-5">Send Inquiry</button>
+      <div class="flex items-center justify-center">
+        <button type="submit" class="btn btn-primary mt-5">Send Inquiry</button>
+      </div>
     </form>
   </section>
 
@@ -273,7 +274,43 @@
 
 
        <script>
-        console.log('%cHover Card credits to: Gayane Gasparyan ♥ @ https://codepen.io/gayane-gasparyan', 'background: linear-gradient(blue, orange); border-radius: 5px; padding: 5px;')
+          console.log('%cHover Card credits to: Gayane Gasparyan ♥ @ https://codepen.io/gayane-gasparyan', 'background: linear-gradient(blue, orange); border-radius: 5px; padding: 5px;')
        </script>
+
+       <script>
+        let photoRadio, webRadio, photoSection, webSection;
+
+        photoRadio = document.getElementById('photoRadio');
+        webRadio = document.getElementById('webRadio');
+
+        photoSection = document.getElementById('photoSection');
+        webSection = document.getElementById('webSection');
+
+        photoRadio.addEventListener('click', e => {
+          console.log(e.target.checked);
+
+          if (e.target.checked) {
+            
+            photoSection.classList.add('flex');
+            photoSection.classList.remove('hidden')
+            webSection.classList.remove('flex')
+            webSection.classList.add('hidden');
+          
+          }
+
+        });
+        webRadio.addEventListener('click', e => {
+          
+          if (e.target.checked) {
+            webSection.classList.add('flex');
+            webSection.classList.remove('hidden')
+            photoSection.classList.remove('flex')
+            photoSection.classList.add('hidden');
+          }
+
+        });
+
+       </script>
+
     </body>
 </html>
