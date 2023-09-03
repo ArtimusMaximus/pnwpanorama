@@ -135,9 +135,9 @@
             <h1 class="text-center text-6xl font-thin mainFont text-white py-4">Gallery</h1>
           <hr />
         </div>
-        <div class="w-full sm:w-3/4 mx-auto">
+        <div class="w-full sm:w-3/4 mx-auto my-auto">
           
-        <div class="carousel mt-1">
+        <div id="gallery" class="carousel h-fit">
           <div id="slide1" class="carousel-item relative w-full h-fit">
             <img src="/images/carousel/DSC04032-HDR.avif" class="h-3/4 object-cover mx-auto" alt="Exterior of a beautiful washington house" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
@@ -170,6 +170,69 @@
             <img src="/images/carousel/DSC05728-HDR.avif" class="h-3/4 object-cover mx-auto" alt="Photo of a kitchen interior; sink particularly" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
               <a href="#slide4" class="btn btn-circle btn-primary">❮</a> 
+              <a href="#slide6" class="btn btn-circle btn-primary">❯</a>
+            </div>
+          </div>
+          <div id="slide6" class="carousel-item relative w-full h-fit">
+            <img src="/images/houses/DJI_0243-HDR.jpg" class="h-3/4 object-cover mx-auto" alt="Photo of a kitchen interior; sink particularly" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
+              <a href="#slide5" class="btn btn-circle btn-primary">❮</a> 
+              <a href="#slide7" class="btn btn-circle btn-primary">❯</a>
+            </div>
+          </div>
+          <div id="slide7" class="carousel-item relative w-full h-fit">
+            <img src="/images/houses/DSC05718-HDR.jpg" class="h-3/4 object-cover mx-auto" alt="Photo of a kitchen interior; sink particularly" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
+              <a href="#slide6" class="btn btn-circle btn-primary">❮</a> 
+              <a href="#slide8" class="btn btn-circle btn-primary">❯</a>
+            </div>
+          </div>
+          <div id="slide8" class="carousel-item relative w-full h-fit">
+            <img src="/images/houses/DSC05748-HDR.jpg" class="h-3/4 object-cover mx-auto" alt="Photo of a kitchen interior; sink particularly" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
+              <a href="#slide7" class="btn btn-circle btn-primary">❮</a> 
+              <a href="#slide9" class="btn btn-circle btn-primary">❯</a>
+            </div>
+          </div>
+          <div id="slide9" class="carousel-item relative w-full h-fit">
+            <img src="/images/houses/DSC06076-HDR.jpg" class="h-3/4 object-cover mx-auto" alt="Photo of a kitchen interior; sink particularly" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
+              <a href="#slide8" class="btn btn-circle btn-primary">❮</a> 
+              <a href="#slide10" class="btn btn-circle btn-primary">❯</a>
+            </div>
+          </div>
+          <div id="slide10" class="carousel-item relative w-full h-fit">
+            <img src="/images/houses/lr.avif" class="h-3/4 object-cover mx-auto" alt="Photo of a kitchen interior; sink particularly" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
+              <a href="#slide9" class="btn btn-circle btn-primary">❮</a> 
+              <a href="#slide11" class="btn btn-circle btn-primary">❯</a>
+            </div>
+          </div>
+          <div id="slide11" class="carousel-item relative w-full h-fit">
+            <img src="/images/houses/DSC07078-HDR.avif" class="h-3/4 object-cover mx-auto" alt="Photo of a kitchen interior; sink particularly" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
+              <a href="#slide10" class="btn btn-circle btn-primary">❮</a> 
+              <a href="#slide12" class="btn btn-circle btn-primary">❯</a>
+            </div>
+          </div>
+          <div id="slide12" class="carousel-item relative w-full h-fit">
+            <img src="/images/houses/DSC06703-HDR.avif" class="h-3/4 object-cover mx-auto" alt="Photo of a kitchen interior; sink particularly" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
+              <a href="#slide11" class="btn btn-circle btn-primary">❮</a> 
+              <a href="#slide13" class="btn btn-circle btn-primary">❯</a>
+            </div>
+          </div>
+          <div id="slide13" class="carousel-item relative w-full h-fit">
+            <img src="/images/houses/DSC06663-HDR.avif" class="h-3/4 object-cover mx-auto" alt="Photo of a kitchen interior; sink particularly" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
+              <a href="#slide12" class="btn btn-circle btn-primary">❮</a> 
+              <a href="#slide14" class="btn btn-circle btn-primary">❯</a>
+            </div>
+          </div>
+          <div id="slide14" class="carousel-item relative w-full h-fit">
+            <img src="/images/houses/DSC06558-HDR.avif" class="h-3/4 object-cover mx-auto" alt="Photo of a kitchen interior; sink particularly" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-[50%]">
+              <a href="#slide13" class="btn btn-circle btn-primary">❮</a> 
               <a href="#slide1" class="btn btn-circle btn-primary">❯</a>
             </div>
           </div>
@@ -242,10 +305,14 @@
       <div class="flex items-center justify-center">
         <button id="submitPhotoForm" type="submit" class="btn btn-primary mt-5 subButton">Send Inquiry</button>
       </div>
-      <progress id="progressBarSuccess" class="items-center justify-center progress w-full mt-3 progress-success hidden bg-gradient-to-l from-black via-success-content to-success animate-pulse" value="100" max="100"></progress>
-      <progress id="progressBarError" class="items-center justify-center progress w-full mt-3 progress-error hidden bg-gradient-to-l from-black via-error to-error-content animate-pulse" value="100" max="100"></progress>
-      <progress id="progressBarWarning" class="items-center justify-center progress w-full h-10 mt-3 progress-warning hidden bg-gradient-to-l from-black via-warning to-warning-content animate-pulse" value="100" max="100"></progress>
-      
+      <div class="relative">
+        <progress id="progressBarSuccess" class="items-center justify-center progress w-full mt-3 border border-white rounded-lg progress-success hidden bg-gradient-to-l from-black via-success to-success-content animate-pulse h-8" value="100" max="100"></progress>
+        <span class="progress-txt absolute text-white left-1/4 sm:left-1/3 font-semibold bottom-[15%] text-sm shadow-2xl drop-shadow-2xl hidden">Inquiry Successfully Sent!</span>
+        <progress id="progressBarError" class="items-center justify-center progress w-full mt-3 border border-white rounded-lg progress-error hidden bg-gradient-to-l from-black via-error to-error-content animate-pulse h-8" value="100" max="100"></progress>
+        <span class="progress-txt absolute text-white left-1/4 sm:left-1/3 font-semibold bottom-[15%] text-sm shadow-2xl drop-shadow-2xl hidden">Error! Please try again...</span>
+        <progress id="progressBarWarning" class="items-center justify-center progress w-full mt-3 border border-white rounded-lg progress-warning hidden bg-gradient-to-l from-black via-warning to-warning-content animate-pulse h-8" value="100" max="100"></progress>
+        <span class="progress-txt absolute text-white left-1/4 sm:left-1/3 font-semibold bottom-[15%] text-sm shadow-2xl drop-shadow-2xl hidden">Email Address is required!</span>
+      </div>
     </form>
   </section>
 
@@ -295,10 +362,12 @@
         <button id="submitWebForm" class="btn btn-primary mt-5 subButton">Send Inquiry</button>
       </div>
       <div class="relative">
-        <progress id="progressBarSuccess" class="items-center justify-center progress w-full mt-3 progress-success hidden bg-gradient-to-l from-black via-success-content to-success animate-pulse" value="100" max="100"></progress>
-        <progress id="progressBarError" class="items-center justify-center progress w-full mt-3 progress-error hidden bg-gradient-to-l from-black via-error to-error-content animate-pulse" value="100" max="100"></progress>
-        <progress id="progressBarWarning" class="items-center justify-center progress w-full h-8 mt-3 border border-white rounded-lg progress-warning hidden bg-gradient-to-l from-black via-warning to-warning-content animate-pulse" value="100" max="100"></progress>
-        <span class="absolute text-white left-1/3 bottom-[.015%] text-3xl shadow-2xl drop-shadow-2xl">Test Text</span>
+        <progress id="progressBarSuccess" class="items-center justify-center progress w-full mt-3 border border-white rounded-lg progress-success hidden bg-gradient-to-l from-black via-success to-success-content animate-pulse h-8" value="100" max="100"></progress>
+        <span class="progress-txt absolute text-white left-1/4 sm:left-1/3 font-semibold bottom-[15%] text-sm shadow-2xl drop-shadow-2xl hidden">Inquiry Successfully Sent!</span>
+        <progress id="progressBarError" class="items-center justify-center progress w-full mt-3 border border-white rounded-lg progress-error hidden bg-gradient-to-l from-black via-error to-error-content animate-pulse h-8" value="100" max="100"></progress>
+        <span class="progress-txt absolute text-white left-1/4 sm:left-1/3 font-semibold bottom-[15%] text-sm shadow-2xl drop-shadow-2xl hidden">Error! Please try again...</span>
+        <progress id="progressBarWarning" class="items-center justify-center progress w-full mt-3 border border-white rounded-lg progress-warning hidden bg-gradient-to-l from-black via-warning to-warning-content animate-pulse h-8" value="100" max="100"></progress>
+        <span class="progress-txt absolute text-white left-1/4 sm:left-1/3 font-semibold bottom-[15%] text-sm shadow-2xl drop-shadow-2xl hidden">Email Address is required!</span>
       </div>
     </form>
     
@@ -308,7 +377,7 @@
 <footer class="w-full h-36 border border-primary bg-white bg-fibres">
     <ul class="grid grid-cols-3 grid-rows-1 text-center mainFont font-extralight text-2xl md:text-4xl text-primary mx-auto my-auto h-full">
       <li class="col-start-3 col-end-4 flex justify-center items-center row-start-1 row-end-1 hover:bg-accent w-fit mx-auto"><a id="about" class="hover:cursor-pointer hover:font-bold flex items-center justify-center p-2 openDialog">About</a></li>
-      <li class="col-start-2 col-end-3 flex justify-center items-center row-start-1 row-end-1 hover:bg-accent w-fit mx-auto"><a id="info" class="hover:cursor-pointer hover:font-bold flex items-center justify-center p-2 openDialog">Info</a></li>
+      <li class="col-start-2 col-end-3 flex justify-center items-center row-start-1 row-end-1 hover:bg-accent w-fit mx-auto"><a id="info" class="hover:cursor-pointer hover:font-bold flex items-center justify-center p-2 openDialog">Pricing</a></li>
       <li id="contactInFooter" class="col-start-1 col-end-2 flex justify-center items-center row-start-1 row-end-1 hover:bg-accent w-fit mx-auto"><a id="contact" class="hover:cursor-pointer hover:font-bold flex items-center justify-center p-2 openDialog">Contact</a></li>
     </ul>
 </footer>
@@ -336,9 +405,19 @@
   </div>
   <span id="dialogBox" class="absolute right-1 top-1 hover:cursor-pointer text-2xl hover:text-error">X</span>
   <span id="dialogBox" class="absolute top-1 hover:cursor-pointer text-2xl underline">About</span>`;
-  const infoInnerHTML = `<div class="mt-5"></div>
+  const infoInnerHTML = `<div class="mt-5 text-center">
+    <h1 class="text-2xl text-success underline">Pricing is as follows:</h1>
+    <ul>
+      <li class="py-3"><span class="text-primary text-2xl">HDR Photography:</span><br /> 25 photos minimum @ 300$ </li>
+      <li class="py-3"><span class="text-primary text-2xl">Drone Photography:</span><br /> 5 photos @ 200$</li>
+      <li class="py-3"><span class="text-primary text-2xl">3D Tour:</span><br /> priced per sq. ft. @ .15, (150$ min.). <br />E.G. 2000 sq. ft. @ 300$</li>
+      <li class="py-3"><span class="text-success text-2xl">All Service Package:</span><br /> @ <span class="underline">flat rate</span> 650$</li>
+      <li class="text-center">for homes up to 2,500 square feet.</li>
+    </ul>
+    </div>
   <span id="dialogBox" class="absolute right-1 top-1 hover:cursor-pointer text-2xl hover:text-error">X</span>
-  <span id="dialogBox" class="absolute top-1 hover:cursor-pointer text-2xl underline">Info</span>`;
+  `;
+  // <span id="dialogBox" class="absolute top-1 hover:cursor-pointer text-2xl underline">Pricing Info</span>
   const contactInnerHTML = `
   <div class="mt-5 text-center text-4xl p-1">
     <div class="py-5">T: 206 627 0422</div>
@@ -428,14 +507,24 @@
       <script type="text/javascript" defer>
         let formID;
         let fieldsFilled = false;
-        let pbSuccess, pbWarning, pbError;
         let progressBars = document.querySelectorAll('progress');
-        let pbSuccess3d    = progressBars[0];
-        let pbError3d      = progressBars[1];
-        let pbWarn3d       = progressBars[2];
-        let pbSuccessWeb   = progressBars[3];
-        let pbErrorWeb     = progressBars[4];
-        let pbWarnWeb      = progressBars[5];
+        let pbSuccess, pbWarning, pbError, pbSuccessTxt, pbWarningTxt, pbErrorTxt, msg;
+        
+        let pbSuccess3d       = progressBars[0];
+        let pbError3d         = progressBars[1];
+        let pbWarn3d          = progressBars[2];
+        let pbSuccessWeb      = progressBars[3];
+        let pbErrorWeb        = progressBars[4];
+        let pbWarnWeb         = progressBars[5];
+
+        let progressTxt       = document.querySelectorAll('.progress-txt');
+        
+        let pbSuccess3dTxt    = progressTxt[0];
+        let pbError3dTxt      = progressTxt[1];
+        let pbWarn3dTxt       = progressTxt[2];
+        let pbSuccessWebTxt   = progressTxt[3];
+        let pbErrorWebTxt     = progressTxt[4];
+        let pbWarnWebTxt      = progressTxt[5];
         document.querySelectorAll('.radio').forEach((radio) => {
           radio.addEventListener('click', e => {
             if (e.target.id === 'webRadio') {
@@ -453,7 +542,6 @@
         };
         const { publicKey, service_id, template_id } = emailjsObj;
 
-
         (function(){
           emailjs.init(publicKey);
         })();
@@ -464,40 +552,58 @@
           if (document.querySelector('#email_web').value !== '' || document.querySelector('#email_3d').value !== '') {
             fieldsFilled = true;
             console.log('value web', document.querySelector('#email_web').value);
-            console.log('value 3d', document.querySelector('#email_3d').value);
+            console.log('value 3d',  document.querySelector('#email_3d').value);
           } else if (!fieldsFilled) {
-            console.log('!fieldsFilled');
-            if (e.target.id === 'submitWebForm') pbWarning = pbWarnWeb;
-            if (e.target.id === 'submitPhotoForm') pbWarning = pbWarn3d;
+            if (e.target.id === 'submitWebForm') {
+              pbWarning = pbWarnWeb; 
+              msg = pbWarnWebTxt;
+            } else if (e.target.id === 'submitPhotoForm') {
+              pbWarning = pbWarn3d; 
+              msg = pbWarn3dTxt;
+            } 
             pbWarning.classList.remove('hidden');
             pbWarning.classList.add('flex');
-            countDown(pbWarning, pbWarning.value);
+            msg.classList.remove('hidden');
+            countDown(pbWarning, pbWarning.value, msg);
           }
           if (fieldsFilled) {
             emailjs.sendForm(service_id, template_id, `#${formID}`)
             .then(function(res) {
              
               console.log('SUCCESS!', res.status, res.text);
-                if (e.target.id === 'submitWebForm' && res.status === 200 || e.target.id === 'submitPhotoForm' && res === 200) {
-                if (e.target.id === 'submitWebForm') pbSuccess = pbSuccessWeb;
-                if (e.target.id === 'submitPhotoForm') pbSuccess = pbSuccess3d;
+                if (e.target.id === 'submitWebForm' && res.status === 200 || e.target.id === 'submitPhotoForm' && res.status === 200) {
+                if (e.target.id === 'submitWebForm') {
+                  pbSuccess = pbSuccessWeb;
+                  msg = pbSuccessWebTxt
+                } else if (e.target.id === 'submitPhotoForm') {
+                  pbSuccess = pbSuccess3d;
+                  msg = pbSuccess3dTxt
+                }
                     pbSuccess.classList.remove('hidden');
                     pbSuccess.classList.add('flex');
-                    countDown(pbSuccess, pbSuccess.value);
+                    msg.classList.remove('hidden');
+                    countDown(pbSuccess, pbSuccess.value, msg);
                 document.querySelectorAll('.inField').forEach((i) => {
                   i.value = '';
+                  fieldsFilled = false;
                 });
                 
               }
             }, function(error) {
               
-              console.log('FAILED...', error);
+              console.log('Submit Failed...', error);
               (() => {
-                if (e.target.id === 'submitWebForm') pbError = pbErrorWeb;
-                if (e.target.id === 'submitPhotoForm') pbError = pbError3d;
+                if (e.target.id === 'submitWebForm') {
+                  pbError = pbErrorWeb;
+                  msg = pbErrorWebTxt;
+                } else if (e.target.id === 'submitPhotoForm') {
+                  pbError = pbError3d;
+                  msg = pbError3dTxt;
+                }
                 pbError.classList.remove('hidden');
                 pbError.classList.add('flex');
-                countDown(pbError, pbError.value);
+                msg.classList.remove('hidden');
+                countDown(pbError, pbError.value, msg);
               })();
             });
           }
@@ -564,16 +670,17 @@
       // titleIn()
       </script>
 <script>
-  console.log(progressBars);
+  // console.log(progressBars);
   // let progressVal = progressBar.value;
   
-  function countDown(progressBar, progressVal) {
+  function countDown(progressBar, progressVal, msg) {
     let ms = 25;
     let count = setInterval(() => {
       if (progressVal === 0) {
-      clearInterval(count);
-      progressVal = 400;
-      progressBar.classList.add('hidden')
+        clearInterval(count);
+        progressVal = 400;
+        progressBar.classList.add('hidden');
+        msg.classList.add('hidden');
       }
 
       // console.log(progressVal);
