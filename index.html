@@ -57,7 +57,7 @@
             </picture> -->
             <div class="p-4 col-start-1 col-end-4 row-start-2 mt-8 flex items-center justify-center md:text-4xl underline w-fit mx-auto my-auto h-fit rounded-lg">
               <ul class="font-thin mainFont">
-                <li class="text-3xl text-center text-base-300">Serving Everett & N. Seattle, WA</li>
+                <li class="text-3xl font-semibold text-center text-base-300">Serving Everett & N. Seattle, WA</li>
                 <!-- <li class="text-2xl text-center">Web Development & Photography services</li> -->
                 <!-- <li>Web development encompassing:</li>
                 <li>-Personally tailored web sites</li>
@@ -176,7 +176,7 @@
         </div>
   </div>
   <!-- Request a Quote -->
-  <div class="flex items-center justify-center flex-col">
+  <div id="rQSection" class="flex items-center justify-center flex-col">
     <div class="bg-neutral w-full">
       <hr />
         <h1 class="text-white text-6xl p-4 mainFont font-thin text-center">Request a Quote</h1>
@@ -222,7 +222,7 @@
           <span class="label-text text-lg">Contact Email</span>
           <span class="label-text">(required)</span>
         </label>
-        <input name="from_email" type="email" placeholder="Type here" class="inField input input-bordered input-primary w-full max-w-xs" required />
+        <input id="email_3d" name="from_email_3d" type="email" placeholder="Type here" class="inField input input-bordered input-primary w-full max-w-xs" required />
       </div>
       <div class="form-control w-full max-w-xs p-2 mx-auto">
         <label class="label">
@@ -240,8 +240,12 @@
         </label>
       </div>
       <div class="flex items-center justify-center">
-        <button id="submitPhotoForm" type="submit" class="btn btn-primary mt-5">Send Inquiry</button>
+        <button id="submitPhotoForm" type="submit" class="btn btn-primary mt-5 subButton">Send Inquiry</button>
       </div>
+      <progress id="progressBarSuccess" class="items-center justify-center progress w-full mt-3 progress-success hidden bg-gradient-to-l from-black via-success-content to-success animate-pulse" value="100" max="100"></progress>
+      <progress id="progressBarError" class="items-center justify-center progress w-full mt-3 progress-error hidden bg-gradient-to-l from-black via-error to-error-content animate-pulse" value="100" max="100"></progress>
+      <progress id="progressBarWarning" class="items-center justify-center progress w-full h-10 mt-3 progress-warning hidden bg-gradient-to-l from-black via-warning to-warning-content animate-pulse" value="100" max="100"></progress>
+      
     </form>
   </section>
 
@@ -270,7 +274,7 @@
           <span class="label-text text-lg">Contact Email</span>
           <span class="label-text">(required)</span>
         </label>
-        <input name="from_email" type="email" placeholder="Type here" class="inField input input-bordered input-accent w-full max-w-xs" required />
+        <input id="email_web" name="from_email_web" type="email" placeholder="Type here" class="inField input input-bordered input-accent w-full max-w-xs" required />
       </div>
       <div class="form-control w-full max-w-xs p-2 mx-auto">
         <label class="label">
@@ -288,19 +292,26 @@
         </label>
       </div>
       <div class="flex items-center justify-center">
-        <button id="submitWebForm" class="btn btn-primary mt-5">Send Inquiry</button>
+        <button id="submitWebForm" class="btn btn-primary mt-5 subButton">Send Inquiry</button>
+      </div>
+      <div class="relative">
+        <progress id="progressBarSuccess" class="items-center justify-center progress w-full mt-3 progress-success hidden bg-gradient-to-l from-black via-success-content to-success animate-pulse" value="100" max="100"></progress>
+        <progress id="progressBarError" class="items-center justify-center progress w-full mt-3 progress-error hidden bg-gradient-to-l from-black via-error to-error-content animate-pulse" value="100" max="100"></progress>
+        <progress id="progressBarWarning" class="items-center justify-center progress w-full h-8 mt-3 border border-white rounded-lg progress-warning hidden bg-gradient-to-l from-black via-warning to-warning-content animate-pulse" value="100" max="100"></progress>
+        <span class="absolute text-white left-1/3 bottom-[.015%] text-3xl shadow-2xl drop-shadow-2xl">Test Text</span>
       </div>
     </form>
+    
   </section>
   <img src="./images/pnw_web.avif" alt="Pacific Panorama LLC og:image Logo" class="hidden">
 
-        <footer class="w-full h-36 border border-primary bg-white bg-fibres">
-            <ul class="grid grid-cols-3 grid-rows-1 text-center mainFont font-extralight text-2xl md:text-4xl text-primary mx-auto my-auto h-full">
-              <li class="col-start-3 col-end-4 flex justify-center items-center row-start-1 row-end-1 hover:bg-accent w-fit mx-auto"><a id="about" class="hover:cursor-pointer hover:font-bold flex items-center justify-center p-2 openDialog">About</a></li>
-              <li class="col-start-2 col-end-3 flex justify-center items-center row-start-1 row-end-1 hover:bg-accent w-fit mx-auto"><a id="info" class="hover:cursor-pointer hover:font-bold flex items-center justify-center p-2 openDialog">Info</a></li>
-              <li class="col-start-1 col-end-2 flex justify-center items-center row-start-1 row-end-1 hover:bg-accent w-fit mx-auto"><a id="contact" class="hover:cursor-pointer hover:font-bold flex items-center justify-center p-2 openDialog">Contact</a></li>
-            </ul>
-        </footer>
+<footer class="w-full h-36 border border-primary bg-white bg-fibres">
+    <ul class="grid grid-cols-3 grid-rows-1 text-center mainFont font-extralight text-2xl md:text-4xl text-primary mx-auto my-auto h-full">
+      <li class="col-start-3 col-end-4 flex justify-center items-center row-start-1 row-end-1 hover:bg-accent w-fit mx-auto"><a id="about" class="hover:cursor-pointer hover:font-bold flex items-center justify-center p-2 openDialog">About</a></li>
+      <li class="col-start-2 col-end-3 flex justify-center items-center row-start-1 row-end-1 hover:bg-accent w-fit mx-auto"><a id="info" class="hover:cursor-pointer hover:font-bold flex items-center justify-center p-2 openDialog">Info</a></li>
+      <li id="contactInFooter" class="col-start-1 col-end-2 flex justify-center items-center row-start-1 row-end-1 hover:bg-accent w-fit mx-auto"><a id="contact" class="hover:cursor-pointer hover:font-bold flex items-center justify-center p-2 openDialog">Contact</a></li>
+    </ul>
+</footer>
 <dialog id="dialogBox" class="bg-twill border-white mainFont w-5/6 sm:w-3/4 md:w-1/2 h-3/4"></dialog>
 
 <script>
@@ -328,9 +339,14 @@
   const infoInnerHTML = `<div class="mt-5"></div>
   <span id="dialogBox" class="absolute right-1 top-1 hover:cursor-pointer text-2xl hover:text-error">X</span>
   <span id="dialogBox" class="absolute top-1 hover:cursor-pointer text-2xl underline">Info</span>`;
-  const contactInnerHTML = `<div class="mt-5 text-center text-4xl">
-    <span>T: 206 627 0422</span>
-    <div>Please inquire for pricing; Jobs and contracts are quoted based on the quantity and the location of</div>
+  const contactInnerHTML = `
+  <div class="mt-5 text-center text-4xl p-1">
+    <div class="py-5">T: 206 627 0422</div>
+    <hr class="text-info py-5" />
+    <div class="text-lg lg:text-2xl">For all forms of contact, including general inquiries, please use the appropriate contact <span class="font-bold italic">form</span>: 
+      <div id="directTo3D" class="underline font-bold text-info mt-10 hover:cursor-pointer hover:text-neutral">3D/Photography</div> <br />
+      <div id="directToWebDev" class="underline font-bold text-accent text-center mt-5 hover:cursor-pointer hover:text-neutral">Web Development</div>
+    </div>
   </div>
   <span id="dialogBox" class="absolute right-1 top-1 hover:cursor-pointer text-2xl hover:text-error">X</span>
   <span id="dialogBox" class="absolute top-1 hover:cursor-pointer text-2xl underline">Contact</span>
@@ -355,18 +371,10 @@
     break;
   }
   }));
-
-  
 </script>
-
-
-
-
-
        <script>
           console.log('%cHover Card credits to: Gayane Gasparyan ♥ @ https://codepen.io/gayane-gasparyan', 'background: linear-gradient(blue, orange); border-radius: 5px; padding: 5px;')
        </script>
-
        <script>
           let photoRadio, webRadio, photoSection, webSection;
 
@@ -393,12 +401,41 @@
               photoSection.classList.add('hidden');
             }
           });
+          function redirectToContactForm()
+          {
+            let delay = t => new Promise(res => setTimeout(res, t));
+            let requestQuoteSection = document.getElementById('rQSection');
+            let dialogBox = document.getElementById('dialogBox');
+            document.getElementById('directTo3D').addEventListener('click', e => {
+              dialogBox.close();
+              photoRadio.click();
+              requestQuoteSection.scrollIntoView({ behavior: 'smooth' })
+            });
+            document.getElementById('directToWebDev').addEventListener('click', e => {
+              dialogBox.close();
+              webRadio.click();
+              requestQuoteSection.scrollIntoView({ behavior: 'smooth' })
+              
+            });
+          }
+          let contactInFooter = document.getElementById('contactInFooter');
+          contactInFooter.addEventListener('click', () => redirectToContactForm());
+
        </script>
        <script type="text/javascript"
        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
       </script>
       <script type="text/javascript" defer>
         let formID;
+        let fieldsFilled = false;
+        let pbSuccess, pbWarning, pbError;
+        let progressBars = document.querySelectorAll('progress');
+        let pbSuccess3d    = progressBars[0];
+        let pbError3d      = progressBars[1];
+        let pbWarn3d       = progressBars[2];
+        let pbSuccessWeb   = progressBars[3];
+        let pbErrorWeb     = progressBars[4];
+        let pbWarnWeb      = progressBars[5];
         document.querySelectorAll('.radio').forEach((radio) => {
           radio.addEventListener('click', e => {
             if (e.target.id === 'webRadio') {
@@ -407,8 +444,8 @@
               formID = 'photoForm'
             }
             console.log(formID);
-          })
-        })
+          });
+        });
         const emailjsObj = {
           publicKey: 'z_9kRE5DNBG4paR3d',
           service_id: 'service_nyzo8da',
@@ -423,18 +460,48 @@
 
         function submitForm(e) {
           e.preventDefault();
-          emailjs.sendForm(service_id, template_id, `#${formID}`)
-          .then(function(res) {
-            console.log('SUCCESS!', res.status, res.text);
-            if (res.status === 200) {
-              document.querySelectorAll('.inField').forEach((i) => {
-                i.value = '';
-              });
+          console.log(e.target);
+          if (document.querySelector('#email_web').value !== '' || document.querySelector('#email_3d').value !== '') {
+            fieldsFilled = true;
+            console.log('value web', document.querySelector('#email_web').value);
+            console.log('value 3d', document.querySelector('#email_3d').value);
+          } else if (!fieldsFilled) {
+            console.log('!fieldsFilled');
+            if (e.target.id === 'submitWebForm') pbWarning = pbWarnWeb;
+            if (e.target.id === 'submitPhotoForm') pbWarning = pbWarn3d;
+            pbWarning.classList.remove('hidden');
+            pbWarning.classList.add('flex');
+            countDown(pbWarning, pbWarning.value);
+          }
+          if (fieldsFilled) {
+            emailjs.sendForm(service_id, template_id, `#${formID}`)
+            .then(function(res) {
+             
+              console.log('SUCCESS!', res.status, res.text);
+                if (e.target.id === 'submitWebForm' && res.status === 200 || e.target.id === 'submitPhotoForm' && res === 200) {
+                if (e.target.id === 'submitWebForm') pbSuccess = pbSuccessWeb;
+                if (e.target.id === 'submitPhotoForm') pbSuccess = pbSuccess3d;
+                    pbSuccess.classList.remove('hidden');
+                    pbSuccess.classList.add('flex');
+                    countDown(pbSuccess, pbSuccess.value);
+                document.querySelectorAll('.inField').forEach((i) => {
+                  i.value = '';
+                });
+                
+              }
+            }, function(error) {
               
-            }
-          }, function(error) {
-            console.log('FAILED...', error);
-          });
+              console.log('FAILED...', error);
+              (() => {
+                if (e.target.id === 'submitWebForm') pbError = pbErrorWeb;
+                if (e.target.id === 'submitPhotoForm') pbError = pbError3d;
+                pbError.classList.remove('hidden');
+                pbError.classList.add('flex');
+                countDown(pbError, pbError.value);
+              })();
+            });
+          }
+          
         }
         document.querySelector('#submitPhotoForm').addEventListener('click', e => {
           submitForm(e);
@@ -445,7 +512,7 @@
 
 
       </script>
-      <script type="module">
+<script type="module">
         import { gsap, TimelineMax } from 'gsap';
         import bgImg from './images/lines.png';
 
@@ -496,6 +563,24 @@
       }
       // titleIn()
       </script>
+<script>
+  console.log(progressBars);
+  // let progressVal = progressBar.value;
+  
+  function countDown(progressBar, progressVal) {
+    let ms = 25;
+    let count = setInterval(() => {
+      if (progressVal === 0) {
+      clearInterval(count);
+      progressVal = 400;
+      progressBar.classList.add('hidden')
+      }
 
-    </body>
+      // console.log(progressVal);
+      progressBar.value = progressVal;
+      return progressVal -= .5;
+      }, ms);  
+  }
+</script>
+</body>
 </html>
