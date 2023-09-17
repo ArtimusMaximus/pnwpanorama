@@ -261,7 +261,7 @@
   </div>
   <!-- 3D / Photo quote section -->
   <section id="photoSection" class="hidden items-center justify-center mb-5">
-    <form id="photoForm" class="mainFont font-thin " method="post" enctype="multipart/form-data">
+    <form id="photoForm" class="mainFont font-thin" method="post" enctype="multipart/form-data">
       <div class="flex items-center justify-center flex-col">
         <select name="for_service" class="select select-primary w-full sm:w-72 max-w-xs m-2">
           <option disabled selected>Property Type?</option>
@@ -285,7 +285,7 @@
           <span class="label-text text-lg">Contact Email</span>
           <span class="label-text">(required)</span>
         </label>
-        <input id="email_3d" name="from_email_3d" type="email" placeholder="Type here" class="inField input input-bordered input-primary w-full max-w-xs" required />
+        <input id="email_3d" name="from_email" type="email" placeholder="Type here" class="inField input input-bordered input-primary w-full max-w-xs" required />
       </div>
       <div class="form-control w-full max-w-xs p-2 mx-auto">
         <label class="label">
@@ -341,7 +341,7 @@
           <span class="label-text text-lg">Contact Email</span>
           <span class="label-text">(required)</span>
         </label>
-        <input id="email_web" name="from_email_web" type="email" placeholder="Type here" class="inField input input-bordered input-accent w-full max-w-xs" required />
+        <input id="email_web" name="from_email" type="email" placeholder="Type here" class="inField input input-bordered input-accent w-full max-w-xs" required />
       </div>
       <div class="form-control w-full max-w-xs p-2 mx-auto">
         <label class="label">
@@ -526,6 +526,7 @@
         let pbSuccessWebTxt   = progressTxt[3];
         let pbErrorWebTxt     = progressTxt[4];
         let pbWarnWebTxt      = progressTxt[5];
+        
         document.querySelectorAll('.radio').forEach((radio) => {
           radio.addEventListener('click', e => {
             if (e.target.id === 'webRadio') {
@@ -549,11 +550,11 @@
 
         function submitForm(e) {
           e.preventDefault();
-          console.log(e.target);
+          // console.log(e.target);
           if (document.querySelector('#email_web').value !== '' || document.querySelector('#email_3d').value !== '') {
             fieldsFilled = true;
-            console.log('value web', document.querySelector('#email_web').value);
-            console.log('value 3d',  document.querySelector('#email_3d').value);
+            // console.log('value web', document.querySelector('#email_web').value);
+            // console.log('value 3d',  document.querySelector('#email_3d').value);
           } else if (!fieldsFilled) {
             if (e.target.id === 'submitWebForm') {
               pbWarning = pbWarnWeb; 
